@@ -129,6 +129,3 @@ def print_test():
             "error": str(e),
             "error_type": type(e).__name__
         }), 500
-
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)

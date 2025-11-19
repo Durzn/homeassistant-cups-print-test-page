@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 echo "Starting CUPS Print Addon..."
-python3 /app/cups_server.py
+gunicorn -b 0.0.0.0:5000 cups_server:app

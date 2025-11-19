@@ -3,14 +3,14 @@ version: "0.1.0"
 slug: "cups_print_test_page"
 description: "Addon to print test pages via CUPS"
 arch:
-  - arm64
+  - aarch64
   - amd64
 startup: services
 boot: auto
 host_network: true
 options:
-  cups_host:
-  cups_port:
+  cups_host: null
+  cups_port: null
 schema:
   cups_host: str?
   cups_port: int?
